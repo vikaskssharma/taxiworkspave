@@ -1,0 +1,152 @@
+<resources>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_creservation">CReservationActivity</string>
+    <string name="title_activity_cchoose_ride">CChooseRideActivity</string>
+    <string name="title_activity_cdriver_location">CDriverLocationActivity</string>
+    <string name="title_activity_cinformation">CInformationActivity</string>
+    <string name="title_activity_cinformation_contact_activtity">CInformationContactActivtity
+    </string>
+    <string name="title_activity_cinformation_my_account">CInformationMyAccountActivity</string>
+    <string name="title_activity_copening_screen">COpeningScreenActivity</string>
+    <string name="title_activity_clogin">CLoginActivity</string>
+    <string name="title_activity_cmap">CMapActivity</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_sample_maps_activtiy">Map</string>
+
+    <string name="googleAPIKey">AIzaSyB9IQq-</string>
+    <string name="title_activity_cvehicle">Hertz</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="car_note">Please Note: The vehicles shown are examples.
+        Specific makes/models within a car class may vary in availability and features
+        such as passenger seating, luggage capacity, equipment and mileage.</string>
+
+    <string name="car_suv">6 Passengers\n
+    2 Large Suitcases\n
+    2 Small Suitcases\n
+    Manual Transmission\n
+    Air Conditioning\n
+    ABS</string>
+
+    <string name="car_sedan">4 Passengers\n
+    2 Large Suitcases\n
+    Manual Transmission\n
+    Air Conditioning\n
+    0 CO2 emmissions\n</string>
+
+    <string name="car_sedan_auto">4 Passengers\n
+    2 Large Suitcases\n
+    Automatic Transmission\n
+    Air Conditioning\n
+    0 CO2 emmissions\n</string>
+
+    <array name="arr_hours">
+        <item>3 hours</item>
+        <item>5 hours</item>
+    </array>
+    <string name="title_activity_cassigned_driver">CAssignedDriver</string>
+
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="age">Age</string>
+    <string name="mobile">Mobile No</string>
+    <string name="email">Email Address</string>
+    <string name="password">Password</string>
+
+    <!-- drawer header -->
+    <string name="welcome">Welcome to <b>Hertz Philippines</b></string>
+    <string name="sample_name">Juan Dela Cruz</string>
+    
+    <!--client drawer menu -->
+    <string name="menu_reservation">Reservations</string>
+    <string name="menu_info">Information</string>
+    <string name="menu_my_account">My Account</string>
+    <string name="menu_contact_us">Contact Us</string>
+    <string name="menu_logout">Log Out</string>
+
+    <!-- driver drawer menu -->
+    <string name="menu_my_bookings">My Bookings</string>
+    <string name="menu_history">History</string>
+
+    <!-- booking -->
+    <string name="origin">Origin</string>
+    <string name="destination">Destination</string>
+    <string name="enter_email">Enter your email</string>
+
+    <string name="pick_up_drop_off">PICK UP AND DROP OFF</string>
+    <string name="car_hire">CAR HIRE</string>
+
+    <string name="booking_info">Booking Information</string>
+
+    <string name="client_name">Client Name</string>
+    <string name="from_desti">From</string>
+    <string name="to_desti">To</string>
+    <string name="contact_no">Contact No</string>
+
+    <string name="enable_gps">Please do activate your GPS first to get your current location</string>
+
+    <string name="driver_info">View Driver Info</string>
+    <string name="rent_car">Rent Car</string>
+    <string name="send_chat">Chat</string>
+    <string name="hint_enter_message">Enter your message here</string>
+    <string name="send">Send</string>
+
+    <string name="manage_car">Manage Cars</string>
+    <string name="manage_drivers">Manage Drivers</string>
+    <string name="assign_driver_to_car">Assign driver to car</string>
+    <string name="register_car">Add a Car</string>
+    <string name="add_Driver">Add Driver</string>
+    <string name="car_model">Car Model</string>
+    <string name="description">Description</string>
+    <string name="capacity">Seating Capacity</string>
+    <string name="rate_per_3_hours">Rate per 3 Hours </string>
+    <string name="rate_per_10_hours">Rate per 10 Hours </string>
+    <string name="excess_rate">Excess Rate </string>
+    <string name="add_car_image">Upload the car image</string>
+    <string name="add_driver_pic">Tap to change pic</string>
+
+    <string name="your_reservations">Your Reservations</string>
+    <string name="booking_id">Booking Id : </string>
+    <string name="from">From : </string>
+    <string name="to">To : </string>
+    <string name="status">Status : </string>
+    <string name="attend">Attend</string>
+
+    <string name="driver_information">Driver Information</string>
+    <string name="driver_assigned">Driver Assigned</string>
+    
+    <string name="driver_name">Driver Name</string>
+    <string name="driver_contact">Contact No</string>
+    <string name="plate_no">Plate No</string>
+    <string name="assign_to_car">Assign to Car</string>
+
+    <string name="purpose">Car Purpose</string>
+    <string name="car_type">Car Type</string>
+    <string name="car_mode">Mode</string>
+    <string name="accept">Accept</string>
+    <string name="decline">Decline</string>
+    <string name="book_now">Book Now</string>
+    <string name="continue_booking">Continue</string>
+    <string name="hire">Car Hire</string>
+    <string name="hours_of_rental">No. of Rental Hour/s</string>
+    <string name="distance">Distance from Client</string>
+    <string name="add_to_my_reservations">Add to my reservations</string>
+
+    <string name="call">Call</string>
+
+    <string name="hint_search_car">Search Car</string>
+    <string name="select_rate">Select Rate</string>
+
+    <string name="please_note"><b>Please Note:</b> The vehicle shown are examples.
+        Specific models within a car class may vary in availability and features such as passenger
+        seating, luggage capacity, equipment, and mileage.</string>
+</resources>

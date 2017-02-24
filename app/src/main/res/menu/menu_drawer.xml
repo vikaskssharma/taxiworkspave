@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navigation_item_1"
+            android:icon="@drawable/reservation"
+            android:title="@string/menu_reservation"/>
+        <item
+            android:id="@+id/navigation_item_2"
+            android:icon="@drawable/menu_info"
+            android:title="@string/menu_info"/>
+        <item
+            android:id="@+id/navigation_item_3"
+            android:icon="@drawable/menu_user"
+            android:title="@string/menu_my_account"/>
+        <item
+            android:id="@+id/navigation_item_4"
+            android:icon="@drawable/menu_contact"
+            android:title="@string/menu_contact_us"/>
+        <item
+            android:id="@+id/navigation_item_5"
+            android:icon="@drawable/menu_logout"
+            android:title="@string/menu_logout"/>
+    </group>
+</menu>

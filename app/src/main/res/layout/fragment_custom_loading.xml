@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dp_twenty"
+    android:padding="@dimen/dp_ten"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avCustomLoading"
+        app:indicator="BallZigZag"
+        app:indicator_color="@color/metro_yellow"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tvLoadingMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_fifteen"
+        android:layout_toRightOf="@id/avCustomLoading"
+        android:textSize="18sp"
+        android:layout_centerVertical="true"
+        android:text="@string/app_name"
+        android:textColor="@android:color/black"/>
+
+</RelativeLayout>

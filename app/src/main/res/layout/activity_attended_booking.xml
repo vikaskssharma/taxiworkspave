@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_body"
+    android:orientation="vertical">
+
+    <!-- Action-bar looking view -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_dimen"
+        android:background="@drawable/bg_header">
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <!-- Content -->
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_body"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="20">
+
+                <RelativeLayout
+                    android:id="@+id/rlProfilePic"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/dp_five"
+                    android:clickable="true">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/ivProfilePic"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/user_holder"
+                        app:civ_border_color="@color/metro_yellow"
+                        app:civ_border_width="2dp" />
+
+                    <ProgressBar
+                        android:id="@+id/pbLoadImage"
+                        style="?android:attr/progressBarStyle"
+                        android:layout_width="@dimen/dp_fifty"
+                        android:layout_height="@dimen/dp_fifty"
+                        android:layout_centerInParent="true"
+                        android:indeterminate="true"
+                        android:progressDrawable="@drawable/custom_progressbar_color"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/dp_five"
+                    android:layout_toRightOf="@id/rlProfilePic"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvFullName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/sample_name"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/sp_fifteen"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvContactNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/sample_name"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/sp_fifteen"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <fragment
+                android:id="@+id/map"
+                class="com.google.android.gms.maps.MapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="@dimen/dp_ten"
+                android:layout_weight="70" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="10"
+                android:orientation="horizontal">
+
+                <com.rey.material.widget.Button
+                    android:id="@+id/btnCall"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:drawableLeft="@drawable/call"
+                    android:paddingLeft="@dimen/dp_five"
+                    android:gravity="center"
+                    android:layout_marginLeft="@dimen/dp_ten"
+                    android:layout_marginRight="@dimen/dp_ten"
+                    android:layout_weight="50"
+                    android:background="@color/metro_green"
+                    android:text="@string/call"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/sp_twenty"
+                    app:rd_enable="true"
+                    app:rd_maxRippleRadius="match_view"
+                    app:rd_rippleType="touch" />
+
+                <com.rey.material.widget.Button
+                    android:id="@+id/btnChat"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/dp_ten"
+                    android:drawableLeft="@drawable/chat"
+                    android:layout_marginRight="@dimen/dp_ten"
+                    android:paddingLeft="@dimen/dp_five"
+                    android:layout_weight="50"
+                    android:background="@color/metro_yellow"
+                    android:text="@string/send_chat"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/sp_twenty"
+                    app:rd_enable="true"
+                    app:rd_maxRippleRadius="match_view"
+                    app:rd_rippleType="touch" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/navDrawer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:menu="@menu/menu_drawer" />
+
+    </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_body"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Action-bar looking view -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/actionbar_dimen"
+            android:background="@drawable/bg_header">
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/drawerIndicator"
+                android:layout_width="@dimen/actionbar_dimen"
+                android:layout_height="@dimen/actionbar_dimen"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/drawer_selector"
+                android:scaleType="centerInside" />
+
+        </RelativeLayout>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefresh"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/dp_five"
+            android:layout_marginRight="@dimen/dp_five"
+            android:layout_marginBottom="@dimen/actionbar_dimen"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvDrivers"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+
+    <com.rey.material.widget.FloatingActionButton
+        android:id="@+id/btnAddDriver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/actionbar_dimen"
+        android:layout_marginRight="@dimen/dp_ten"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        app:fab_backgroundColor="@color/metro_yellow"
+        app:fab_elevation="@dimen/dp_five"
+        app:fab_iconSize="@dimen/dp_forty"
+        app:fab_iconSrc="@drawable/add" />
+
+</RelativeLayout>

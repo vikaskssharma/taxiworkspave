@@ -1,0 +1,10 @@
+{
+  "applications": {
+    "_default": {
+      "link": "hertz"
+    },
+    "hertz": {
+      "applicationId": "owxkS2NUrby5SC31HJPwXC8WrnJh4FniMVcuS0Of"
+    }
+  }
+}

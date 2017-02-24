@@ -1,0 +1,68 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.merce.net.calendareventdisplay"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+    }
+    productFlavors {
+        booking {
+            applicationId "hertz.hertz.booking"
+            resValue "string", "app_name", "Hertz"
+        }
+
+        driver {
+            applicationId "hertz.hertz.driverapp"
+            resValue "string", "app_name", "Hertz Driver App"
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:25.1.0'
+    compile 'com.facebook.android:facebook-android-sdk:4.0.0'
+    compile 'com.google.maps.android:android-maps-utils:0.4+'
+    testCompile 'junit:junit:4.12'
+    compile 'com.firebase:firebase-client-android:2.4.0'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.github.rey5137:material:1.2.1.6-SNAPSHOT'
+    compile 'com.android.support:cardview-v7:25.1.0'
+    compile 'com.android.support:design:25.1.0'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.github.rey5137:material:1.2.1'
+    compile 'cn.pedant.sweetalert:library:1.3'
+    compile 'com.google.android.gms:play-services-maps:8.3.0'
+    compile 'com.google.android.gms:play-services-location:8.3.0'
+    compile 'jp.wasabeef:recyclerview-animators:1.2.0@aar'
+    compile 'com.parse:parse-android:1.10.3'
+    compile 'com.parse.bolts:bolts-android:1.2.1'
+    compile 'com.wang.avi:library:1.0.0'
+    compile 'com.cocosw:bottomsheet:1.2.0@aar'
+    compile 'de.hdodenhof:circleimageview:2.0.0'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.3'
+    compile ('com.firebase:geofire:1.1.0+') {
+        exclude module: 'httpclient' //by artifact name
+        exclude group: 'org.apache.httpcomponents' //by group
+        exclude group: 'org.apache.httpcomponents', module: 'httpclient' //by both name and group
+    }
+    compile 'uk.co.chrisjenx:calligraphy:2.1.0'
+    compile 'com.cocosw:bottomsheet:1.2.0@aar'
+}

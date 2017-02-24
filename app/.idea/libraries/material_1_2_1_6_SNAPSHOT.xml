@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="material-1.2.1.6-SNAPSHOT">
+    <ANNOTATIONS>
+      <root url="jar://$PROJECT_DIR$/build/intermediates/exploded-aar/com.github.rey5137/material/1.2.1.6-SNAPSHOT/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/build/intermediates/exploded-aar/com.github.rey5137/material/1.2.1.6-SNAPSHOT/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/build/intermediates/exploded-aar/com.github.rey5137/material/1.2.1.6-SNAPSHOT/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.rey5137/material/1.2.1.6-SNAPSHOT/9b3dfb48deca079539ce3c4246022b6314aeb9f/material-1.2.1.6-SNAPSHOT-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

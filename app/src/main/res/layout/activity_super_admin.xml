@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_body"
+    android:orientation="vertical">
+
+    <!-- Action-bar looking view -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_dimen"
+        android:background="@drawable/bg_header">
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <!-- Content -->
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/actionbar_dimen">
+
+            <com.rey.material.widget.Button
+                android:id="@+id/btnCar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/manage_car"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_fifty"
+                android:layout_marginLeft="@dimen/dp_ten"
+                android:layout_marginRight="@dimen/dp_ten"
+                android:background="@color/metro_yellow"
+                android:textColor="@android:color/black"
+                app:rd_rippleType="touch"
+                app:rd_maxRippleRadius="match_view"
+                app:rd_enable="true"/>
+
+            <com.rey.material.widget.Button
+                android:id="@+id/btnDriver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/manage_drivers"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_fifteen"
+                android:layout_marginLeft="@dimen/dp_ten"
+                android:layout_marginRight="@dimen/dp_ten"
+                android:background="@color/metro_yellow"
+                android:textColor="@android:color/black"
+                app:rd_rippleType="touch"
+                app:rd_maxRippleRadius="match_view"
+                app:rd_enable="true"/>
+
+
+            <com.rey.material.widget.Button
+                android:id="@+id/btnLogout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/menu_logout"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_fifteen"
+                android:layout_marginLeft="@dimen/dp_ten"
+                android:layout_marginRight="@dimen/dp_ten"
+                android:background="@color/metro_yellow"
+                android:textColor="@android:color/black"
+                app:rd_rippleType="touch"
+                app:rd_maxRippleRadius="match_view"
+                app:rd_enable="true"/>
+
+        </LinearLayout>
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/navDrawer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:headerLayout="@layout/drawer_header"
+            app:menu="@menu/menu_drawer" />
+
+    </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>

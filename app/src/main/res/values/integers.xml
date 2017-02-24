@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="anim_duration">200</integer>
+
+    <integer name="left_align">10</integer>
+    <integer name="right_align">6</integer>
+</resources>

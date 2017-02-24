@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="yellow">#fbe31d</color>
+    <color name="gray">#3d3d3d</color>
+    <color name="green_light">#85D6DB</color>
+    <color name="green">#41CCD4</color>
+    <color name="green_dark">#319BA1</color>
+
+    <color name="purple_light">#7F7FEF</color>
+    <color name="purple">#642FD4</color>
+    <color name="purple_dark">#33186B</color>
+
+    <color name="gray_light">#7e7e7e</color>
+    <color name="gray_dark">#3e3e3e</color>
+
+    <color name="blue_light">#7499D1</color>
+    <color name="blue">#255FB8</color>
+    <color name="blue_dark">#255FB8</color>
+
+    <color name="red_light">#FC476C</color>
+    <color name="red">#E03F60</color>
+    <color name="red_dark">#C23753</color>
+
+    <color name="text_white">#FEFEFE</color>
+
+
+    <color name="ob_green">#099E7E</color>
+    <color name="ob_purple">#6110B3</color>
+    <color name="ob_red">#A80C16</color>
+
+    <item name="blue_" type="color">#FF33B5E5</item>
+    <item name="purple_" type="color">#FFAA66CC</item>
+    <item name="green_" type="color">#FF99CC00</item>
+    <item name="orange" type="color">#FFFFBB33</item>
+    <item name="darkblue" type="color">#FF0099CC</item>
+    <item name="darkpurple" type="color">#FF9933CC</item>
+    <item name="darkgreen" type="color">#FF669900</item>
+    <item name="darkorange" type="color">#FFFF8800</item>
+    <item name="darkred" type="color">#FFCC0000</item>
+    <color name="black_alpha">#96000000</color>
+    <color name="black_alpha_2">#52000000</color>
+
+    <color name="metro_yellow">#fbe31d</color>
+    <color name="metro_yellow_alpha">#96fbe31d</color>
+    <color name="metro_yellow_alpha_2">#32fbe31d</color>
+    <color name="metro_teal">#00aba9</color>
+
+    <color name="metro_blue">#2d89ef</color>
+
+    <color name="metro_green">#43a047</color>
+    <color name="metro_green_alpha">#9643a047</color>
+
+    <color name="metro_red">#A80C16</color>
+    <color name="metro_red_alpha">#96A80C16</color>
+
+    <color name="black_translucent">#80000000</color>
+
+
+</resources>

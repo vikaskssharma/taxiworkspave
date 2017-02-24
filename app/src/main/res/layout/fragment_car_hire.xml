@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_body"
+    android:orientation="vertical">
+
+
+    <!-- Dummy item to prevent AutoCompleteTextView from receiving focus -->
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="0px"
+        android:layout_height="0px"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/autoComplete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvHeader"
+        android:layout_margin="@dimen/dp_five"
+        android:background="@android:color/white"
+        android:hint="@string/hint_search_car"
+        android:padding="@dimen/dp_five"
+        android:textColor="@color/metro_yellow"
+        android:textColorHint="@android:color/black"
+        android:textSize="@dimen/sp_fifteen" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/autoComplete"
+        android:background="@color/metro_yellow_alpha_2">
+
+        <Button
+            android:id="@+id/btnContinue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/dp_ten"
+            android:layout_marginLeft="@dimen/dp_ten"
+            android:layout_marginRight="@dimen/dp_ten"
+            android:layout_marginTop="@dimen/dp_ten"
+            android:background="@drawable/button_black_clickable"
+            android:text="@string/continue_booking"
+            android:textColor="@color/metro_yellow" />
+
+        <LinearLayout
+            android:id="@+id/llPager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_ten"
+            android:layout_marginRight="@dimen/dp_ten"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivNavLeft"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_fifty"
+                android:layout_weight="10"
+                android:src="@drawable/arrowleft" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_margin="@dimen/dp_five"
+                android:layout_weight="80" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/forHirePager"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_margin="@dimen/dp_five"
+                android:layout_weight="80"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/ivNavRight"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_fifty"
+                android:layout_weight="10"
+                android:src="@drawable/arrowright" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/llPager"
+            android:layout_marginTop="@dimen/dp_five"
+            android:layout_marginBottom="@dimen/dp_five">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvCarModel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black_alpha_2"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:padding="@dimen/dp_five"
+                    android:text="@string/app_name"
+                    android:textSize="@dimen/sp_twenty" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_ten"
+                    android:layout_marginRight="@dimen/dp_ten"
+                    android:layout_marginTop="@dimen/dp_ten"
+                    android:orientation="horizontal">
+
+
+                    <!-- left -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="50">
+
+                        <TextView
+                            android:id="@+id/tvPlateNo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_five"
+                            android:text="@string/app_name"
+                            android:textSize="@dimen/sp_fifteen" />
+
+                        <TextView
+                            android:id="@+id/tvCapacity"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_five"
+                            android:text="@string/app_name"
+                            android:textSize="@dimen/sp_fifteen" />
+
+                        <TextView
+                            android:id="@+id/tvExcessRate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_five"
+                            android:text="@string/app_name"
+                            android:textSize="@dimen/sp_fifteen" />
+
+                        <TextView
+                            android:id="@+id/tvType"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/app_name"
+                            android:layout_marginTop="@dimen/dp_five"
+                            android:textSize="@dimen/sp_fifteen" />
+
+                    </LinearLayout>
+
+                    <!-- right -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="50">
+
+                        <com.rey.material.widget.Spinner
+                            android:id="@+id/spnrRate"
+                            android:layout_width="match_parent"
+                            android:layout_margin="@dimen/dp_ten"
+                            android:layout_height="wrap_content"
+                            app:spn_arrowColor="@color/metro_yellow"
+                            app:spn_labelEnable="true"
+                            app:spn_arrowSize="@dimen/dp_ten"
+                            app:spn_arrowPadding="@dimen/sp_ten"
+                            app:spn_arrowSwitchMode="true"
+                            app:spn_labelTextColor="@color/metro_yellow"
+                            app:spn_arrowAnimDuration="@android:integer/config_shortAnimTime"
+                            app:spn_popupItemAnimOffset="60"
+                            app:spn_label="@string/select_rate"
+                            app:spn_arrowInterpolator="@android:anim/decelerate_interpolator"
+                            app:spn_popupItemAnimation="@anim/abc_grow_fade_in_from_bottom"
+                            app:rd_style="@style/Material.Drawable.Ripple.Wave"
+                            android:dropDownWidth="match_parent"/>
+
+                        <TextView
+                            android:id="@+id/tvRate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_five"
+                            android:text="@string/app_name"
+                            android:textSize="@dimen/sp_fifteen" />
+
+                        <com.rey.material.widget.TextView
+                            android:id="@+id/btnReserve"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/add_to_my_reservations"
+                            android:gravity="center"
+                            android:layout_marginTop="@dimen/dp_ten"
+                            android:background="@color/metro_yellow"
+                            android:padding="@dimen/dp_five"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/sp_fourteen" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginTop="@dimen/dp_twenty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black_alpha_2"
+                    android:gravity="center"
+                    android:padding="@dimen/dp_five"
+                    android:textColor="@android:color/white"
+                    android:text="@string/please_note"
+                    android:textSize="@dimen/sp_twelve" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="match_parent"
+        android:background="@color/metro_yellow"
+        android:layout_height="@dimen/dp_fifty"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/sp_thirty"
+        android:paddingLeft="@dimen/dp_ten"
+        android:gravity="center_vertical"
+        android:text="@string/hire"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_fifty"
+        android:layout_marginBottom="@dimen/dp_fifteen"
+        android:orientation="vertical">
+
+        <!-- hours of rental -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etHours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hours_of_rental"
+                android:textColor="@android:color/black"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <com.rey.material.widget.FloatingActionButton
+            android:id="@+id/btnProceed"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/dp_ten"
+            android:layout_marginBottom="@dimen/dp_ten"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:elevation="@dimen/dp_five"
+            app:fab_backgroundColor="@color/metro_yellow"
+            app:fab_iconSrc="@drawable/next"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

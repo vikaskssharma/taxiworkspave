@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/action_driver_info"
+            android:icon="@drawable/menu_info"
+            android:title="@string/driver_info"/>
+        <item
+            android:id="@+id/action_rent_car"
+            android:icon="@drawable/menu_rent_car"
+            android:title="@string/rent_car"/>
+    </group>
+</menu>

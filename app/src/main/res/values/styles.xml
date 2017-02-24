@@ -1,0 +1,58 @@
+<resources>
+
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--<item name="android:actionBarStyle">@style/MyActionBar</item>
+        &lt;!&ndash; Support library compatibility &ndash;&gt;
+        <item name="actionBarStyle">@style/MyActionBar</item>-->
+        <!--<item name="android:windowContentOverlay">@null</item>-->
+        <item name="android:spinnerDropDownItemStyle">@style/mySpinnerItemStyle</item>
+        <item name="android:textColorHint">@android:color/white</item>
+        //red is the color of the pressed state and activated state
+        <item name="colorControlActivated">@color/metro_yellow</item>
+        //black is the color of the normal state
+        <item name="colorControlNormal">@color/metro_yellow</item>
+    </style>
+
+    <style name="TextAppearance.App.TextInputLayout" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="MyActionBar" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@drawable/header</item>
+        <!-- Support library compatibility -->
+
+        <item name="android:textColor">#ffffff</item>
+        <item name="background">@drawable/header</item>
+        <item name="android:backgroundStacked">@drawable/header</item>
+        <item name="backgroundStacked">@drawable/header</item>
+    </style>
+
+    <style name="mySpinnerItemStyle" parent="@android:style/Widget.Holo.DropDownItem.Spinner">
+        <item name="android:textColor">@color/gray_dark</item>
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+    <style name="dialog_animation">
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
+    </style>
+
+    <style name="FieldsStyle" parent="AppTheme">
+        //hint color And Label Color in False State
+        <item name="android:textColorHint">@android:color/darker_gray</item>
+        <item name="android:textColor">@android:color/black</item>
+        //Label color in True State And Bar Color False And True State
+        <item name="colorAccent">@android:color/black</item>
+        <item name="colorControlNormal">@android:color/black</item>
+        <item name="colorControlActivated">@android:color/black</item>
+    </style>
+
+    <style name="FloatingLabelStyle" parent="TextAppearance.AppCompat">
+        //hint color And Label Color in False State
+        <item name="android:textColor">@color/metro_yellow</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+</resources>

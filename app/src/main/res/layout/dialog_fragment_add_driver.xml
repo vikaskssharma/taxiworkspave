@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_fifty"
+        android:background="@color/metro_yellow"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_ten"
+        android:text="@string/add_Driver"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/sp_thirty" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_fifteen"
+            android:layout_marginLeft="@dimen/dp_ten"
+            android:layout_marginRight="@dimen/dp_ten"
+            android:layout_marginTop="@dimen/dp_forty"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rlAddImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_five"
+                android:layout_marginRight="@dimen/dp_five"
+                android:clickable="true">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ivProfilePic"
+                    android:layout_width="100dp"
+                    app:civ_border_width="2dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/driver_holder"
+                    app:civ_border_color="@color/metro_yellow"
+                    android:layout_height="100dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ivProfilePic"
+                    android:layout_marginTop="@dimen/dp_ten"
+                    android:layout_centerHorizontal="true"
+                    android:drawablePadding="@dimen/dp_ten"
+                    android:text="@string/add_driver_pic"
+                    android:textSize="@dimen/sp_twenty" />
+
+                <ProgressBar
+                    android:indeterminate="true"
+                    android:id="@+id/pbLoadImage"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone"
+                    android:progressDrawable="@drawable/custom_progressbar_color"
+                    android:layout_height="@dimen/dp_fifty"
+                    android:layout_width="@dimen/dp_fifty"/>
+
+            </RelativeLayout>
+
+            <!-- email -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_ten"
+                android:theme="@style/FieldsStyle"
+                app:hintTextAppearance="@style/FloatingLabelStyle">
+
+                <EditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    android:singleLine="true"
+                    android:imeOptions="actionNext"
+                    android:textColor="@android:color/black" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- first name -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_ten"
+                android:theme="@style/FieldsStyle"
+                app:hintTextAppearance="@style/FloatingLabelStyle">
+
+                <EditText
+                    android:id="@+id/etFirstName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/first_name"
+                    android:inputType="textCapWords"
+                    android:singleLine="true"
+                    android:imeOptions="actionNext"
+                    android:textColor="@android:color/black" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- last name -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_ten"
+                android:theme="@style/FieldsStyle"
+                app:hintTextAppearance="@style/FloatingLabelStyle">
+
+                <EditText
+                    android:id="@+id/etLastName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/last_name"
+                    android:singleLine="true"
+                    android:inputType="textCapWords"
+                    android:imeOptions="actionNext"
+                    android:textColor="@android:color/black" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- mobile no -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_ten"
+                android:theme="@style/FieldsStyle"
+                app:hintTextAppearance="@style/FloatingLabelStyle">
+
+                <EditText
+                    android:id="@+id/etMobileNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/mobile"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:imeOptions="actionDone"
+                    android:textColor="@android:color/black" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <com.rey.material.widget.Spinner
+                android:id="@+id/spnrAvailableCar"
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/dp_ten"
+                android:layout_height="wrap_content"
+                app:spn_arrowColor="@color/metro_yellow"
+                app:spn_labelEnable="true"
+                app:spn_arrowSize="@dimen/dp_ten"
+                app:spn_arrowPadding="@dimen/sp_ten"
+                app:spn_arrowSwitchMode="true"
+                app:spn_labelTextColor="@color/metro_yellow"
+                app:spn_arrowAnimDuration="@android:integer/config_shortAnimTime"
+                app:spn_popupItemAnimOffset="60"
+                app:spn_label="@string/assign_to_car"
+                app:spn_arrowInterpolator="@android:anim/decelerate_interpolator"
+                app:spn_popupItemAnimation="@anim/abc_grow_fade_in_from_bottom"
+                app:rd_style="@style/Material.Drawable.Ripple.Wave"
+                android:dropDownWidth="match_parent"/>
+
+
+            <com.rey.material.widget.FloatingActionButton
+                android:id="@+id/btnAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/dp_forty"
+                android:layout_marginTop="@dimen/dp_twenty"
+                app:elevation="@dimen/dp_five"
+                app:fab_backgroundColor="@color/metro_yellow"
+                app:fab_iconSrc="@drawable/next" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
